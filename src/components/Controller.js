@@ -11,6 +11,7 @@ export default function Controller(){
         <ColorContext.Consumer>
             {({changeColor}) =>
                 <div className='controller'>
+                    <p>Enter a color:  </p>
                     <input
                         type='text'
                         value={value}
@@ -20,6 +21,7 @@ export default function Controller(){
                             changeColor(event.target.value)
                         }}
                     />
+                    <p>  and click on the tree </p>
                 </div>
             }
         </ColorContext.Consumer>

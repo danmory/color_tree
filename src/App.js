@@ -10,6 +10,7 @@ export default function App(props){
     return (
         <div className="container">
             <ColorContext.Provider value={{bgcolor, changeColor}}>
+                <h1>Paint a Christmas tree</h1>
                 <Tree/>
                 <Controller/>
             </ColorContext.Provider>
